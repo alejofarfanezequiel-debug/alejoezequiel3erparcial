@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Casa Oliva: cocina de temporada, ingredientes locales y una experiencia para disfrutar sin prisa. Reserva tu mesa.">
+  <title>Casa Oliva | Cocina de temporada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="assets/css/restaurant-style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- INICIO NAVEGACIÓN PRINCIPAL -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-nav" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand brand-lockup" href="#inicio" aria-label="Casa Oliva, inicio"><span class="brand-mark"><i class="fa-solid fa-leaf"></i></span><span>CASA <b>OLIVA</b><small>COCINA DE TEMPORADA</small></span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="#historia">Nuestra casa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reservas">Reservas</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-outline-gold nav-reserve" href="#reservas">RESERVAR MESA <i class="fa-solid fa-arrow-right ms-2"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- INICIO SECCIÓN HERO -->
+    <header class="hero d-flex align-items-center" id="inicio">
+      <div class="hero-image" role="img" aria-label="Mesa preparada para una cena íntima"></div>
+      <div class="container position-relative hero-content">
+        <p class="eyebrow text-gold"><span></span> COCINA HONESTA · PRODUCTO LOCAL</p>
+        <h1>El sabor de lo<br><em>hecho con tiempo.</em></h1>
+        <p class="hero-copy">Una mesa de temporada, ingredientes que cuentan su origen<br class="d-none d-md-block"> y momentos que merecen quedarse un poco más.</p>
+        <div class="d-flex flex-wrap align-items-center gap-4 mt-4">
+          <a href="#reservas" class="btn btn-gold btn-lg">RESERVAR UNA MESA <i class="fa-solid fa-arrow-right ms-2"></i></a>
+          <a href="#menu" class="text-link-light">Explorar el menú <i class="fa-solid fa-chevron-down ms-2"></i></a>
+        </div>
+      </div>
+      <div class="hero-note"><span>01 — 04</span><span class="hero-note-line"></span><span>VALLE DE LA LUNA · BOLIVIA</span></div>
+      <a href="#menu" class="scroll-cue" aria-label="Desplazarse al menú"><i class="fa-solid fa-arrow-down"></i></a>
+    </header>
+
+    <!-- INICIO SECCIÓN INTRODUCCIÓN -->
+    <section class="intro-section py-5">
+      <div class="container py-lg-4">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5"><p class="eyebrow text-olive"><span></span> UNA COCINA CON RAÍCES</p><h2 class="section-heading mb-0">Lo cercano sabe<br><em>a algo especial.</em></h2></div>
+          <div class="col-lg-6 offset-lg-1"><p class="intro-copy">En Casa Oliva cocinamos siguiendo el ritmo de la tierra. Elegimos pequeños productores, respetamos cada ingrediente y dejamos que el fuego haga lo suyo. El resultado: platos sencillos en apariencia, memorables en cada bocado.</p><a class="text-link-dark" href="#historia">Conoce nuestra filosofía <i class="fa-solid fa-arrow-right ms-2"></i></a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INICIO SECCIÓN MENÚ DINÁMICO -->
+    <section class="menu-section py-5" id="menu">
+      <div class="container py-lg-5">
+        <div class="section-top text-center">
+          <p class="eyebrow text-olive justify-content-center"><span></span> DE NUESTRA COCINA A TU MESA</p>
+          <h2 class="section-heading">Una carta que sigue <em>la estación.</em></h2>
+          <p class="section-subtitle">Ingredientes frescos, combinaciones honestas y mucho cariño en cada plato.</p>
+        </div>
+        <ul class="nav nav-pills menu-tabs justify-content-center mt-4 mb-5" id="menuTabs" role="tablist">
+          <li class="nav-item" role="presentation"><button class="nav-link active" id="entradas-tab" data-bs-toggle="pill" data-bs-target="#entradas" type="button" role="tab" aria-controls="entradas" aria-selected="true">Entradas</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="fuertes-tab" data-bs-toggle="pill" data-bs-target="#fuertes" type="button" role="tab" aria-controls="fuertes" aria-selected="false">Platos fuertes</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="postres-tab" data-bs-toggle="pill" data-bs-target="#postres" type="button" role="tab" aria-controls="postres" aria-selected="false">Postres</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="bebidas-tab" data-bs-toggle="pill" data-bs-target="#bebidas" type="button" role="tab" aria-controls="bebidas" aria-selected="false">Bebidas</button></li>
+        </ul>
+        <div class="tab-content" id="menuTabsContent">
+          <div class="tab-pane fade show active" id="entradas" role="tabpanel" aria-labelledby="entradas-tab" tabindex="0"><div class="row g-4">
+            <div class="col-md-6"><article class="dish-card"><div class="dish-photo"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Ensalada fresca de temporada" class="img-fluid"></div><div class="dish-info"><div class="dish-title"><h3>Huerta de estación</h3><span>Bs 48</span></div><p>Tomates de colores, hojas tiernas, durazno y vinagreta de hierbas.</p><span class="dish-tag">VEGETARIANO</span></div></article></div>
+            <div class="col-md-6"><article class="dish-card"><div class="dish-photo"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2e9b3?auto=format&fit=crop&w=900&q=85" alt="Vegetales frescos con hierbas" class="img-fluid"></div><div class="dish-info"><div class="dish-title"><h3>Buñuelos de choclo</h3><span>Bs 42</span></div><p>Choclo dulce, queso de cabra y miel suave de locoto.</p><span class="dish-tag">FAVORITO DE LA CASA</span></div></article></div>
+            <div class="col-md-6"><article class="dish-card"><div class="dish-photo"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85" alt="Pan artesanal con acompañamientos" class="img-fluid"></div><div class="dish-info"><div class="dish-title"><h3>Pan de masa madre</h3><span>Bs 35</span></div><p>Horneado cada mañana, mantequilla batida y aceite de oliva.</p><span class="dish-tag">PARA COMPARTIR</span></div></article></div>
+            <div class="col-md-6"><article class="dish-card"><div class="dish-photo"><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=900&q=85" alt="Plato de vegetales asados" class="img-fluid"></div><div class="dish-info"><div class="dish-title"><h3>Remolachas al rescoldo</h3><span>Bs 44</span></div><p>Remolacha asada, yogur de oveja, nueces y eneldo fresco.</p><span class="dish-tag">SIN GLUTEN</span></div></article></div>
+          </div></div>
+          <div class="tab-pane fade" id="fuertes" role="tabpanel" aria-labelledby="fuertes-tab" tabindex="0"><div class="row g-4">
+            <div class="col-md-6"><article class="dish-card"><div class="dish-photo"><img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=900&q=85" alt="Carne asada con guarnición" class="img-fluid"></div><div class="dish-info"><div class="dish-title"><h3>Res a fuego lento</h3><span>Bs 96</span></div><p>Corte local, puré de papa nativa y jugo de cocción al romero.</p><span class="dish-tag">ESPECIALIDAD</span></div></article></div>
+            <div class="col-md-6"><article class="dish-card"><div class="dish-photo"><img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=900&q=85" alt="Risotto cremoso" class="img-fluid"></div><div class="dish-info"><div class="dish-title"><h3>Risotto de hongos</h3><span>Bs 78</span></div><p>Arroz carnaroli, hongos silvestres y queso madurado de altura.</p><span class="dish-tag">VEGETARIANO</span></div></article></div>
+            <div class="col-md-6"><article class="dish-card"><div class="dish-photo"><img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=900&q=85" alt="Pescado con hierbas frescas" class="img-fluid"></div><div class="dish-info"><div class="dish-title"><h3>Pesca del día</h3><span>Bs 92</span></div><p>Pesca responsable, vegetales tiernos y mantequilla cítrica.</p><span class="dish-tag">SEGÚN DISPONIBILIDAD</span></div></article></div>
+            <div class="col-md-6"><article class="dish-card"><div class="dish-photo"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Plato vegetal con ingredientes locales" class="img-fluid"></div><div class="dish-info"><div class="dish-title"><h3>Calabaza del valle</h3><span>Bs 70</span></div><p>Calabaza asada, quinua crocante, crema de almendras y salvia.</p><span class="dish-tag">VEGANO</span></div></article></div>
+          </div></div>
+          <div class="tab-pane fade" id="postres" role="tabpanel" aria-labelledby="postres-tab" tabindex="0"><div class="row g-4">
+            <div class="col-md-6"><article class="dish-card"><div class="dish-photo"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85" alt="Torta de chocolate" class="img-fluid"></div><div class="dish-info"><div class="dish-title"><h3>Chocolate y sal</h3><span>Bs 38</span></div><p>Bizcocho tibio de cacao, crema fresca y sal de Uyuni.</p><span class="dish-tag">DE LA CASA</span></div></article></div>
+            <div class="col-md-6"><article class="dish-card"><div class="dish-photo"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85" alt="Postre de frutas y crema" class="img-fluid"></div><div class="dish-info"><div class="dish-title"><h3>Fruta de temporada</h3><span>Bs 34</span></div><p>Fruta fresca, crema de vainilla y granola de semillas.</p><span class="dish-tag">SIN GLUTEN</span></div></article></div>
+          </div></div>
+          <div class="tab-pane fade" id="bebidas" role="tabpanel" aria-labelledby="bebidas-tab" tabindex="0"><div class="row g-4">
+            <div class="col-md-6"><article class="dish-card"><div class="dish-photo"><img src="https://images.unsplash.com/photo-1513558161293-cdad765edfd7?auto=format&fit=crop&w=900&q=85" alt="Bebida refrescante con cítricos" class="img-fluid"></div><div class="dish-info"><div class="dish-title"><h3>Limonada de hierbaluisa</h3><span>Bs 24</span></div><p>Limón recién exprimido, hierbaluisa y almíbar de la casa.</p><span class="dish-tag">SIN ALCOHOL</span></div></article></div>
+            <div class="col-md-6"><article class="dish-card"><div class="dish-photo"><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=900&q=85" alt="Copa de vino" class="img-fluid"></div><div class="dish-info"><div class="dish-title"><h3>Vinos de altura</h3><span>desde Bs 42</span></div><p>Selección cambiante de viñedos bolivianos y pequeños productores.</p><span class="dish-tag">COPA O BOTELLA</span></div></article></div>
+          </div></div>
+        </div>
+        <p class="menu-footnote text-center mt-5">Nuestra carta cambia con la estación. Consulta por opciones vegetarianas y alérgenos.</p>
+      </div>
+    </section>
+
+    <!-- INICIO SECCIÓN CHEF Y FILOSOFÍA -->
+    <section class="story-section" id="historia">
+      <div class="container-fluid px-0"><div class="row g-0 align-items-stretch">
+        <div class="col-lg-6 story-photo-wrap"><img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1400&q=90" alt="Chef preparando un plato en la cocina" class="story-photo img-fluid"></div>
+        <div class="col-lg-6 story-panel d-flex align-items-center"><div class="story-content">
+          <p class="eyebrow text-gold"><span></span> NUESTRA HISTORIA</p><h2 class="section-heading text-white">Del huerto<br><em>a la mesa.</em></h2>
+          <p>Para nuestra chef, Mariana Rojas, cocinar empieza mucho antes de encender los fogones: empieza en el campo, conociendo a quien cultiva, esperando la cosecha y aprendiendo a escuchar cada ingrediente.</p>
+          <p>Por eso nuestra carta cambia. No perseguimos la perfección: buscamos el sabor verdadero de cada temporada y el placer de compartirlo contigo.</p>
+          <div class="chef-signature"><span class="signature-mark">MR</span><span><b>Mariana Rojas</b><small>CHEF & COFUNDADORA</small></span></div>
+        </div></div>
+      </div></div>
+    </section>
+
+    <!-- INICIO SECCIÓN RESERVAS -->
+    <section class="reservation-section py-5" id="reservas">
+      <div class="container py-lg-5">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-5 reservation-aside"><p class="eyebrow text-olive"><span></span> TU MESA TE ESPERA</p><h2 class="section-heading">Hagamos espacio<br><em>para disfrutar.</em></h2><p>Ven a celebrar, a conversar o simplemente a comer rico. Nosotros nos ocupamos del resto.</p>
+            <div class="contact-detail"><i class="fa-regular fa-clock"></i><span><b>HORARIOS</b><small>Mar – Dom · 12:00–15:00 / 19:00–22:30</small></span></div>
+            <div class="contact-detail"><i class="fa-solid fa-location-dot"></i><span><b>ENCUÉNTRANOS</b><small>Av. Los Jardines 148, La Paz, Bolivia</small></span></div>
+            <div class="contact-detail"><i class="fa-solid fa-phone"></i><span><b>¿PREFIERES LLAMAR?</b><small>+591 2 277 0148</small></span></div>
+          </div>
+          <div class="col-lg-6 offset-lg-1"><div class="reservation-card"><div class="reservation-card-head"><span>RESERVACIONES</span><span>01 — 06</span></div><form class="row g-3 needs-validation" id="reservationForm" novalidate>
+            <div class="col-md-6"><label for="guestName" class="form-label">Nombre completo</label><input type="text" class="form-control" id="guestName" placeholder="Tu nombre" required><div class="invalid-feedback">Cuéntanos cómo te llamas.</div></div>
+            <div class="col-md-6"><label for="guestEmail" class="form-label">Correo electrónico</label><input type="email" class="form-control" id="guestEmail" placeholder="nombre@correo.com" required><div class="invalid-feedback">Ingresa un correo válido.</div></div>
+            <div class="col-md-6"><label for="guestPhone" class="form-label">Teléfono</label><input type="tel" class="form-control" id="guestPhone" placeholder="+591 700 00000" required><div class="invalid-feedback">Déjanos un teléfono de contacto.</div></div>
+            <div class="col-md-6"><label for="guestCount" class="form-label">Comensales</label><select class="form-select" id="guestCount" required><option value="" selected disabled>Seleccionar</option><option>1 persona</option><option>2 personas</option><option>3 personas</option><option>4 personas</option><option>5 personas</option><option>6 personas</option><option>Más de 6 personas</option></select><div class="invalid-feedback">Selecciona cuántos vienen.</div></div>
+            <div class="col-md-6"><label for="bookingDate" class="form-label">Fecha</label><input type="date" class="form-control" id="bookingDate" required><div class="invalid-feedback">Elige una fecha para tu visita.</div></div>
+            <div class="col-md-6"><label for="bookingTime" class="form-label">Hora</label><select class="form-select" id="bookingTime" required><option value="" selected disabled>Seleccionar</option><option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option><option>14:00</option><option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option></select><div class="invalid-feedback">Selecciona un horario disponible.</div></div>
+            <div class="col-12"><label for="guestNote" class="form-label">Un detalle para tener en cuenta <span class="optional-label">OPCIONAL</span></label><textarea class="form-control" id="guestNote" rows="2" placeholder="Alergias, ocasión especial…"></textarea></div>
+            <div class="col-12 mt-4"><button class="btn btn-gold w-100" type="submit">SOLICITAR RESERVA <i class="fa-solid fa-arrow-right ms-2"></i></button><p class="form-note"><i class="fa-solid fa-lock me-1"></i> Te confirmaremos la disponibilidad por teléfono o correo.</p><div class="alert alert-success d-none mt-3 mb-0" id="formSuccess" role="status">¡Gracias! Recibimos tu solicitud. Nos pondremos en contacto para confirmar tu mesa.</div></div>
+          </form></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INICIO CINTA DE CIERRE -->
+    <section class="closing-strip"><div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3"><p class="mb-0">Buena comida. Buenas conversaciones. <em>Buen vivir.</em></p><a href="#reservas" class="text-link-light">Encuentra tu mesa <i class="fa-solid fa-arrow-right ms-2"></i></a></div></section>
+  </main>
+  <!-- INICIO PIE DE PÁGINA -->
+  <footer class="site-footer"><div class="container"><div class="row align-items-center gy-3"><div class="col-md-4"><a class="navbar-brand brand-lockup" href="#inicio"><span class="brand-mark"><i class="fa-solid fa-leaf"></i></span><span>CASA <b>OLIVA</b><small>COCINA DE TEMPORADA</small></span></a></div><div class="col-md-4 text-md-center"><small>© 2026 Casa Oliva · Hecho para compartir</small></div><div class="col-md-4 text-md-end social-links"><a href="#reservas" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#reservas" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="tel:+59122770148" aria-label="Llamar"><i class="fa-solid fa-phone"></i></a></div></div></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const siteNav = document.querySelector('.site-nav');
+    const updateNav = () => siteNav.classList.toggle('scrolled', window.scrollY > 32);
+    updateNav();
+    window.addEventListener('scroll', updateNav, { passive: true });
+
+    (() => {
+      const form = document.getElementById('reservationForm');
+      const dateField = document.getElementById('bookingDate');
+      dateField.min = new Date().toISOString().split('T')[0];
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        form.classList.add('was-validated');
+        if (form.checkValidity()) {
+          document.getElementById('formSuccess').classList.remove('d-none');
+          form.querySelector('button[type="submit"]').innerHTML = 'SOLICITUD RECIBIDA <i class="fa-solid fa-check ms-2"></i>';
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
